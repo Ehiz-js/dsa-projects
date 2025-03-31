@@ -25,19 +25,17 @@ def max_pairwise_product_fast2(numbers):
         elif num > second_max:
             second_max = num
     return first_max * second_max
-
-
 if __name__ == '__main__':
     while True:
         n = random.randint(2,11)
         print(n)
         a = list()
         for i in range(n):
-            a.append(random.randint(1, 100000))
+            a.append(random.randint(1, 100))
         for i in range(n):
             print(a[i])
         res1 = max_pairwise_product_fast(a)
-        res2 = max_pairwise_product_fast2(a)
+        res2 = max_pairwise_product(a)
         if res1!=res2:
             print("Wrong Answer: "+str(res1)+" "+str(res2))
             break
