@@ -13,8 +13,6 @@ def sum():
     print("please enter a number between 0 and 9")
   else:
     sum = input1 + input2
-    print(sum) 
-  
+    print(sum)
+
 sum()
-
-
