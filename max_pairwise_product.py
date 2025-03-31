@@ -39,7 +39,7 @@ if __name__ == '__main__':
         res1 = max_pairwise_product_fast(a)
         res2 = max_pairwise_product_fast2(a)
         if res1!=res2:
-            print("Wrong Answer: "+res1+" "+res2)
+            print("Wrong Answer: "+str(res1)+" "+str(res2))
             break
         else:
             print("OK")
